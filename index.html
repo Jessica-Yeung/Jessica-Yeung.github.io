@@ -1,7 +1,541 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jessica YANG's Webpage</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Jessica</span> YANG</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#publications" class="nav-item nav-link">Publications</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#awards" class="nav-item nav-link">Awards</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+				<a href="#links" class="nav-item nav-link">Links</a>
+            </div>
+            <a href="" class="btn btn-outline-primary d-none d-lg-block">Contact Me</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Jessica YANG</h1>
+                    <!--<h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>-->
+                    <div><h5 align-items-center>Machine Learning, Large-Scale Data Mining, <br>Medical Image Analysis, Augmented Reality, <br>Healthcare</h5></div>
+					
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <!--<a href="" class="btn btn-outline-light mr-5">Download CV</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button>-->
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">zq-cs.yang@polyu.edu.hk</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="Jessica YANG">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Project fellow, COMP, PolyU, Hong Kong</h3>
+                    <p>Dr. YANG is a project fellow with the Department of Computing, The Hong Kong Polytechnic University, Hong Kong. 
+					She received her Ph.D. in computer science from the College of Computer Science, Sichuan University, China and has been a postdoctoral fellow with the Dept. of Biomedical Engineering, The Chinese University of Hong Kong. 
+					Her research interests include Machine Learning, Large-Scale Data Mining, Medical Image Analysis and Augmented Reality. Her publications appear in top-notch conferences (MM) and journals (TMI, TIP, BIB). 
+					</p>
+					<p>She has been involved a lot in AR rehabilitation in recent years. During the COVID-19, the systems she built with her team in CUHK have made it possible for 300+ post-stroke patients (including those from 35 rehabilitation
+					centres and 60+ home users) to continue their trials when most of the centres have suspended their rehabilitation services due to the pandemics. The work has been reported by TVB in March 2021, has won the Best Rehabilitation
+					Programme in the 9th Eldercare Innovation Awards 2021 which held in Singapore in December 2021 and “Certificate of Merit” in Smart Living (Smart Healthcare) in ‘Hong Kong ICT Awards 2021’ in December 2021.  
+					</p>
+					<p><div><h6><b>Research Interest:</b> Machine Learning, Large-Scale Data Mining, Medical Image Analysis, Augmented Reality, Healthcare<h6></div></P>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Zhen-Qun Yang (Jessica YANG)</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">PhD</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">10 Years</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">zq-cs.yang@polyu.edu.hk</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">PQ702, Mong Man Wai Building</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Publications Start -->
+    <div class="container-fluid py-5" id="publications">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Publications</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Publications</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Journal Papers</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">IEEE Transactions on Image Processing</h5>
+                            <p class="mb-2"><strong>Q1, IF: 10.86</strong> | <small>2013 - 2023</small></p>
+                            <p><b>Zhen-Qun Yang</b>, Xiaoy-Yong Wei, and Yi Zhang*, Gerald Friedland, Contextual
+Noise Reduction for Domain Adaptive Near-Duplicate Retrieval on Merchandize Images,
+IEEE Transactions on Image Processing, vol. 26, no. 8, pp.
+3896–3910, 2017.</p>
+<p>Xu-Lu Zhang<sup>1</sup>, <b>Zhen-Qun Yang<sup>1</sup></b>, Dong-Mei Jiang, Ga Liao, Qing Li, Ramesh Jain,
+Xiao-Yong Wei*, Cardiac Evidence Mining for Eating Monitoring using Collocative
+Electrocardiogram Imagining. TechRxiv. Preprint. https://doi.org/10.36227/techrxiv.18093275.v2</p>
+<!--<p>Guangwu Qian<sup>1</sup>, <b>Zhen-Qun Yang<sup>1</sup></b>, Xu-Lu Zhang, Yaowei Wang, Qing Li, Xiao-
+Yong Wei*, Conceptor Learning for Class Activation Mapping, IEEE Transactions
+on Image Processing, under review, 2022. arXiv Preprint:
+https://arxiv.org/abs/2201.08636</P>-->
+<p>Xiao-Yong Wei, <b>Zhen-Qun Yang*</b>, Chong-Wah Ngo, Zhang Wei, Visual Typo
+Correction by Collocative Optimization - A Case Study on Merchandize Images, IEEE
+Transactions on Image Processing, vol.23, no.2, pp.527–540,
+2014.</p>
+<p>Xiao-Yong Wei, <b>Zhen-Qun Yang*</b>, Coaching the Exploration and Exploitation
+in Active Learning for Interactive Video Retrieval, IEEE Transactions on Image
+Processing, vol.22, no.3, pp.955–968, 2013.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">IEEE Transactions on Medical Imaging</h5>
+                            <p class="mb-2"><strong>Q1, IF: 10.05</strong> | <small>2021</small></p>
+                            <p>Xiao-Yong Wei<sup>1</sup>, <b>Zhen-Qun Yang<sup>1</sup></b>, Zhang-Xu Lu, et al., Deep Collocative Learning
+for Immunofixation Electrophoresis Image Analysis, IEEE Transactions on Medical
+Imaging, 40(7):1898-1910, July 2021.</p>
+                        </div>
+						
+						 <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Briefings in Bioinformatics</h5>
+                            <p class="mb-2"><strong>Q1, IF: 11.62</strong> | <small>2022</small></p>
+                            <p>Cao, Yi<sup>1</sup>, <b>Zhen-Qun Yang<sup>1</sup></b>, Xu-Lu Zhang, Wenqi Fan, Yaowei Wang, Jiajun Shen, Dong-Qing Wei, Qing Li, and Xiao-Yong Wei. 
+"Identifying the kind behind SMILES—anatomical therapeutic chemical classification using structure-only representations." 
+Briefings in Bioinformatics 23, no. 5 (2022): bbac346.
+</p>
+                        </div>
+						
+
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Journal of NeuroEngineering and Rehabilitation</h5>
+                            <p class="mb-2"><strong>Q1, IF: 5.12</strong> | <small>2022</small></p>
+                            <p><b>Zhen-Qun Yang</b>, Dan Du, Xiao-Yong Wei, Raymond Kai-Yu Tong*, Augmented reality for stroke rehabilitation during COVID-19, 
+							Journal of NeuroEngineering and Rehabilitation, 19(1):136, 2022 Dec 8.</p>
+                        </div>
+						 <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Gait & Posture</h5>
+                            <p class="mb-2"><strong>Q2, IF: 2.72</strong> | <small>2021</small></p>
+                            <p>Ling-Fung Yeung<sup>1</sup>, <b>Zhen-Qun Yang<sup>1</sup></b>, Kenneth Chik-Chi Cheng, Dan Du, Raymond
+Kai-Yu Tong*, Effects of camera viewing angles on tracking kinematic gait patterns
+using Azure Kinect, Kinect v2 and Orbbec Astra Pro v2, Gait & Posture, vol.87, pp. 19–26, June 2021.</p>
+                        </div>
+						<div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Interactive Learning Environments</h5>
+                            <p class="mb-2"><strong>Q1, IF: 4.965</strong> | <small>2022</small></p>
+                            <p>Lee, John SY, Chak Yan Yeung, and <b>Zhenqun Yang</b>, Personalized and adaptive text recommendation for learners of Chinese, 
+						Interactive Learning Environments, (2022): 1-14.</p>
+                        </div>
+                    </div>
+                </div>
+				<!--Conference papers -->
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Conference Papers</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">ACM Multimedia</h5>
+                            <p class="mb-2"><strong>Q1</strong> | <small>2011 - 2013</small></p>
+                            <p>Xiao-Yong Wei, <b>Zhen-Qun Yang*</b>, Mining In-Class Social Networks for Large-Scale
+Pedagogical Analysis, ACM Multimedia 2012 (MM’12), Nara, Japan, October
+29-November 2, 2012. (Long Paper, Oral, Acceptance Rate: 18%, recommended as a
+candidate for Brave New Ideas) </p>
+							<p>Xiao-Yong Wei, <b>Zhen-Qun Yang*</b>, Coached Active Learning for Interactive Video
+Search, ACM Multimedia 2011 (MM’11), Scottsdale, Arizona, USA, November
+28-December 1, 2011. (Long Paper, Oral, Acceptance Rate: 17%, recommended
+as a High Risk/Reward Theories (i.e., Contributions that explore innovative
+and paradigm shifts in conventional theory and practice of multimedia techniques
+and applications. In this paper, the ideas differ from the state of art in theory and
+demonstrate the potential for changing ways of thinking))</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1"></h5>
+                            <p class="mb-2"><strong></strong> <small></small></p>
+                            <p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+							<p>&nbsp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Publications End -->
+
+
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+	<div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+	        <div>• 3.5 Years’ Postdoctoral Fellow and Project Manager/Coordinator at CUHK. PhD in Computer Science and Technology.</div>
+			<div>• 7+ Years’ Research Experience in AI (Medical Image Analysis, Machine Learning, Data Mining, Computer Vision, and Computational Linguistics).</div>
+<div>• Publications in Top-notch Conference (MM) and Journals (TMI, TIP, BIB, ...) with First/Corresponding Authorship.</div>
+<div>• Applied Research Validated in Real World (e.g., rehabilitation systems for stroke and people with chronic decease running in 35+ centres in Hong Kong and 50+
+homes; system for Immunofixation Electrophoresis analysis running successfully for 30+ months in the West China Hospital).</div>
+<div>• 6+ Years’ Experience of Research Grant Application and Execution (i.e., Co-Investigator of 3 national level projects, Project Manager/Coordinator of 1 ITF project and 1 Hong Kong Jockey Club Charity Fund project).</div>
+<div>• 5+ Years’ Experience in Industry (i.e., 3.5 years as a Software Architect and Project Manager of 2 AR rehabilitation projects in CUHK, and 2+ years as a Software Engineer and Database Manager of 3 E-learning systems in CityU).</div>
+<div>• 10+ Years’ Professional Experience with Java/J2EE, C, C#, Python, .NET, Matlab, HTML, JSP, ASP, PHP, SQL Server, and MySQL. </div>
+       <!-- 
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Angular JS</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Wordpress</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-left mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Teaching & Learning in Education</h4>
+                    </div>
+                    <p>ML, AI and big-data technologies to support primary and secondary schools' teaching and learning in Hong Kong. 
+					<div>Computer-aided teaching and learning of existing bilingual writing and translating in/between English and Chinese,
+					the final data analysis platform has been contacted for trial with Peking University, Beijing Foreign Studies University and Yuan Ze University in Taiwan.</div>
+					</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-left mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Healthycare</h4>
+                    </div>
+                    <p>Rehabilitation systems for stroke and people with chronic decease running in 35+ centres and 50+ homes in Hong Kong during the COVID-19. 
+					The work has been reported by TVB in March 2021, has won the Best Rehabilitation Programme in the "9th Eldercare Innovation Awards 2021" 
+					and Certificate of Merit in Smart Living (Smart Healthcare) in "Hong Kong ICT Awards 2021" in December 2021.
+					<div>System for Immunofixation Electrophoresis analysis running successfully for 30+ months in the West China Hospital.</div></p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-left mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web & Windows Design, Development</h4>
+                    </div>
+                    <p>On-line platform for computer-aided teaching and learning of bilingual writing and translating in English and Chinese.
+					<div>Windows platform of nature seen through poetry: From Lexis to Cognition and from Text to Imagery Network with Wang Wei and Meng Haoran as Case Examples.</div></p>
+                    <div>Web-based learning system that was used in over 40 local primary schools in Hong Kong.</div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-left mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Design, Development</h4>
+                    </div>
+                    <p>Models for neural network grammatical error detection and correction models in English learner writing. 
+					<div>Models for automatic difficulty assessment and learning content recommendation for Chinese learning.
+					The work has been published in Interactive Learning Environments.</div></p>
+                    <!--<a class="border-bottom border-primary text-decoration-none" href="">Read More</a>-->
+                </div>
+                <div class="col-lg-4 col-md-6 text-left mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Image Retrieval</h4>
+                    </div>
+                    <p> Contextual Noise Reduction for Domain Adaptive Near-Duplicate Retrieval on Merchandize Images. 
+					Published in IEEE Transactions on Image Processing (TIP), 2017.
+					<div>Visual Typo Correction by Collocative Optimization - A Case Study on Merchandize Images. 
+					Published in IEEE Transactions on Image Processing (TIP), 2013.</div></p>
+                  
+                </div>
+                <div class="col-lg-4 col-md-6 text-left mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Video Retrieval</h4>
+                    </div>
+                    <p>Coached Active Learning for Interactive Video Search. Published in ACM Multimedia as a long
+paper. <div>The model has been proposed and been recommended as a <b>High Risk/Reward Theories</b> (i.e., Contributions that explore innovative and paradigm shifts in
+conventional theory and practice of multimedia techniques and applications. In this paper, the
+ideas differ from the state of art in theory and demonstrate the potential for changing ways of thinking).</div></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Awards Start -->
+    <div class="container-fluid pt-5 pb-3" id="awards">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Awards</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Awards</h1>
+            </div>
+              <div>-- Nov.,2021 <b>HONG KONG ICT Awards 2021, Smart Living (Smart Healthcare), Certificate of Merits, Hong Kong</b>, AR-Home and AR-Centre Rehab, Project Manager and Software
+Architect.</div>
+<div>-- Dec.,2021 <b>"The Best Rehabilitation Programme" in the 9th Eldercare Innovation
+Awards 2021, Singapore</b>, HOPE4Care programme, Project Coordinator and Software Architect.</div>
+<div>-- Mar.,2021 The AI related projects I’ve managed/coordinated have played important
+roles in addressing the COVID situation and reported by TVB News.</div>
+<div>-- Sep.,2011 Scholarship for Excellent PhD Student.</div>
+<div>-- June,2007 Excellent Master Thesis. Biometric Identification.</div>
+<div>-- June,2003 Provincial Outstanding Graduate of Yunnan (5%).</div>
+		   </div>
+        </div>
+    </div>
+    <!-- Awards End -->
+	
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+           
+			<div><h6>Email: <span class="text-secondary">zq-cs.yang@polyu.edu.hk</span></h6></div>
+            <div><h6>Address: <span class="text-secondary">PQ702, Mong Man Wai Building, Dept. of Computing, The Polytechnic University of Hong Kong</span></h6></div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+<!-- Links Start -->
+    <div class="container-fluid pt-5 pb-3" id="links">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Links</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Useful Links</h1>
+            </div>
+           <div><b>[1] AR-Home & AR-Centre Rehab (Project Manager, November 2020 – April 2022)</b>
+<br><b>Website:</b> <a href="http://www.bme.cuhk.edu.hk/arhome/" target="blank">http://www.bme.cuhk.edu.hk/arhome/</a>
+<br><b>Award:</b> Smart Living (Smart Healthcare) – Certificate of Merit, ICT Awards 2021. December
+2021.
+<br><a href="http://www.bme.cuhk.edu.hk/new/files/newssharingarplatfform.pdf" target="blank">http://www.bme.cuhk.edu.hk/new/files/newssharingarplatfform.pdf</a>
+<br><a href="https://www.cpr.cuhk.edu.hk/en/press/cuhk-innovative-projects-win-five-ict-awards-" target="blank">https://www.cpr.cuhk.edu.hk/en/press/cuhk-innovative-projects-win-five-ict-awards-</a></div>
+<br><div><b>[2] HOPE4Care Programme (Project Coordinator, September 2018 – 28 February 2022)</b>
+<br><b>Website:</b> <a href="http://www.bme.cuhk.edu.hk/hope4care/" target="blank">http://www.bme.cuhk.edu.hk/hope4care/</a>
+<br><b>Award:</b> “Best Rehabilitation Programme” award at the 9th Eldercare Innovation Awards 2021. December 2021.
+<br><a href="http://www.hkcd.com/hkcdweb/content/2021/12/12/content_1311457.html" target="blank">http://www.hkcd.com/hkcdweb/content/2021/12/12/content_1311457.html</a>
+<br><a href="https://www.erg.cuhk.edu.hk/erg/node/2353" target="blank">https://www.erg.cuhk.edu.hk/erg/node/2353</a></div>
+<br><div><b>[3] TV News about our AR Rehab system. March 2021</b>
+<br><a href="https://news.tvb.com/local/6063473e34b0313f712120b6" target="blank">https://news.tvb.com/local/6063473e34b0313f712120b6</a>
+<br><a href="https://www.youtube.com/watch?v=DBCSBdhH1Zg" target="blank">https://www.youtube.com/watch?v=DBCSBdhH1Zg</b>
+</div>
+
+
+		   </div>
+        </div>
+    </div>
+    <!-- Links End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!--<div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>-->
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Copyright, 2023</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex.</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
